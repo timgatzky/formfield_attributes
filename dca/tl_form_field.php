@@ -23,10 +23,11 @@ foreach($GLOBALS['TL_DCA']['tl_form_field']['palettes'] as $type => $palette)
 		continue;
 	}
 	
-	$palette =  str_replace('tabindex','more_attributes',$palette);
+	$palette =  str_replace('accesskey','more_attributes',$palette);
 
 	$GLOBALS['TL_DCA']['tl_form_field']['palettes'][$type] = $palette;
 }
+
 
 /**
  * Fields
