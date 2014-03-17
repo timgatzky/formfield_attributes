@@ -1,4 +1,4 @@
-<?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
+<?php
 
 /**
  * Contao Open Source CMS
@@ -11,7 +11,6 @@
  * @link		http://contao.org
  * @license		http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
-
 
 /**
  * Palettes
@@ -37,5 +36,6 @@ $GLOBALS['TL_DCA']['tl_form_field']['fields']['more_attributes'] = array
 	'label'                   => &$GLOBALS['TL_LANG']['tl_form_field']['more_attributes'],
 	'exclude'                 => true,
 	'inputType'               => 'listWizard',
-	'eval'                    => array('tl_class'=>'clr long','decodeEntities'=>false)
+	'eval'                    => array('tl_class'=>'clr long','decodeEntities'=>false),
+	'sql'					  => "blob NULL",
 );

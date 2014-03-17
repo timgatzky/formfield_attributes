@@ -1,4 +1,4 @@
-<?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
+<?php
 
 /**
  * Contao Open Source CMS
@@ -15,7 +15,7 @@
 /**
  * Class FormFieldAttributes
  */
-class FormFieldAttributes extends Frontend
+class FormFieldAttributes extends \Frontend
 {
 	/**
 	 * Add attributes to form field
@@ -27,7 +27,7 @@ class FormFieldAttributes extends Frontend
 	 */
 	public function addAttributes(Widget $objWidget, $strForm, $arrForm)
 	{
-		if(strlen($objWidget->more_attributes) < 1)
+		if(strlen($objWidget->more_attributes) < 1 || TL_MODE != 'FE')
 		{
 			return $objWidget;
 		}

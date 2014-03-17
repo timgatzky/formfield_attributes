@@ -1,4 +1,4 @@
-<?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
+<?php
 
 /**
  * Contao Open Source CMS
@@ -7,7 +7,7 @@
  * 
  * @copyright	Tim Gatzky 2013
  * @author		Tim Gatzky <info@tim-gatzky.de>
- * @package		
+ * @package		formfield_attributes
  * @link		http://contao.org
  * @license		http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
